@@ -61,7 +61,7 @@ jobs:
           AWS_REGION=ap-south-1
 
           # Build Docker image
-           Build Docker image
+           
           docker build -t $ECR_REPOSITORY_NAME .
 
           # Tag the Docker image for ECR
