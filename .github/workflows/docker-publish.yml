@@ -65,10 +65,10 @@ jobs:
           docker build -t $ECR_REPOSITORY_NAME .
 
           # Tag the Docker image for ECR
-          docker tag $ECR_REPOSITORY_NAME:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
+          docker tag $ECR_REPOSITORY_NAME $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME
 
           # Push Docker image to ECR
-          #docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
+          docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME
           docker push 123456789012.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo:latest
 
 
