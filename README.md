@@ -22,16 +22,13 @@
 🤝[Contributors][contributors-url]   🔱[Forks][forks-url]   🔴[Issues][issues-url]  🦾[Elaborative Guide and Troubleshooting Tips][Troubleshoot-url]
 
 
-  <h3 align="center">Image Creation Pipeline for DTS</h3></strong></a>
+  <h3 align="center">Docker Image Creation</h3></strong></a>
 
   <p align="center">
-   Know how to build a custom image using this Tool on Azure (with Packer and Github Actions).
+   Know how to build a custom image using this Tool on AWS (with Docker and Github Actions).
     <br />
-    <a href="https://github.com/eng-citrix/image-creation-pipeline"><strong>Explore the repository »</strong></a>
-    <br />  
-    <a target="_blank" href="https://github.com/eng-citrix/image-creation-pipeline/issues">Report a Bug</a>
-    ·
-    <a href="https://github.com/eng-citrix/image-creation-pipeline/settings">Request Feature(s)</a>
+    <a href=" https://github.com/Mouliswarswamy/Online-book-dockerimage"><strong>Explore the repository »</strong></a>
+    
   </p>
 </div>
 
