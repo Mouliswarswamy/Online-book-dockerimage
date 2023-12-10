@@ -231,3 +231,10 @@ Project Link: [https://github.com/Mouliswarswamy/Online-book-dockerimage.git](ht
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[GitHub]: https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white
+[GitHub-url]: https://github.com/
+[Azure]: https://img.shields.io/badge/Azure-007FFF?style=for-the-badge&logo=MicrosoftAzure&logoColor=white
+[Azure-url]: https://portal.azure.com "AWS Portal"
