@@ -45,6 +45,30 @@ jobs:
       - name: Build with Maven
         run: mvn clean package
 
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build and Push to ECR
+        run: |
+          # Set your ECR repository name and AWS region
+          ECR_REPOSITORY_NAME=my-docker-repo
+          AWS_REGION=ap-south-1
+
+          # Build Docker image
+          docker build -t $ECR_REPOSITORY_NAME .
+
+          # Tag the Docker image for ECR
+          docker tag $ECR_REPOSITORY_NAME:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
+
+          # Push Docker image to ECR
+          docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
+
+        env:
+          AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          ECR_REPOSITORY_NAME: my-docker-repo
+
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
