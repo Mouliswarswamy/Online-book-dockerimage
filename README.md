@@ -1,6 +1,6 @@
 # CSG
 
-<!-- Improved compatibility of back to top link: See: https://github.com/eng-citrix/image-creation-pipeline.git/pull -->
+<!-- Improved compatibility of back to top link: See: https://github.com/Mouliswarswamy/Online-book-dockerimage.git/pull -->
 <a name="readme-top"></a>
 
 <!--
@@ -246,7 +246,7 @@ Get the Software's and Clone the Repo's,
    
 2. Clone the repo using https method
    ```sh
-   git clone https://github.com/eng-citrix/image-creation-pipeline.git
+   git clone https://github.com/Mouliswarswamy/Online-book-dockerimage.git
    ```
 3. Install Packer
    ```sh
@@ -263,7 +263,7 @@ ___
 
 Abhishek Arora - abhishek.arora@cloud.com , Devara Saicharan - saicharan.devara@cloud.com
 
-Project Link: [https://github.com/eng-citrix/image-creation-pipelin.git](https://github.com/eng-citrix/image-creation-pipeline.git)
+Project Link: [https://github.com/Mouliswarswamy/Online-book-dockerimage.git](https://github.com/Mouliswarswamy/Online-book-dockerimage.git)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
