@@ -61,7 +61,8 @@ jobs:
           AWS_REGION=ap-south-1
 
           # Build Docker image
-          docker build -t $ECR_REPOSITORY_NAME .
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
           # Tag the Docker image for ECR
           docker tag $ECR_REPOSITORY_NAME:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
@@ -73,6 +74,7 @@ jobs:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
           ECR_REPOSITORY_NAME: ${{ secrets.AWS_DOCKER_REPO }}
+          ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
 
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
