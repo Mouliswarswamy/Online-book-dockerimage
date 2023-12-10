@@ -62,7 +62,7 @@ jobs:
 
           # Build Docker image
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY .
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY
 
           # Tag the Docker image for ECR
           docker tag $ECR_REPOSITORY_NAME:latest $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY_NAME:latest
