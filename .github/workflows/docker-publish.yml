@@ -67,7 +67,7 @@ jobs:
         env:
           AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          ECR_REPOSITORY_NAME: my-docker-repo
+          ECR_REPOSITORY_NAME: ${{ secrets.AWS_DOCKER_REPO }}
 
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
